@@ -1,0 +1,41 @@
+html {
+  font: 15px "Avenir";
+  background-color: slategray;
+  display: flex;
+  justify-content: center;
+}
+
+.blue {
+  font-family: "Avenir";
+  color: dodgerblue;
+  width: 150px;
+  background-color: bisque;
+  border: 1px solid black;
+  padding: 20px 5px 20px 20px;
+}
+h1 {
+  margin: 0;
+  color: palevioletred;
+  font: bold 3em "Avenir";
+  text-align: center;
+  text-shadow: 3px 3px 1px black;
+
+}
+
+img {
+  height: 500px;
+}
+
+.list_header{
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  padding: 20px 20px 20px;
+  border: 2px solid black;
+}
