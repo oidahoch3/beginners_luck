@@ -9,14 +9,27 @@ myImage.addEventListener('click', () => {
   }
 });
 
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
+const myButton = document.querySelector('button');
+const myHeading = document.querySelector('h1');
 
-function setNumber() {
+function setHeading() {
   const number = prompt('Please enter a Number');
   myHeading.textContent = `You owe me ${number} kisses`;
 }
 
+function setList() {
+  const number = prompt('Please enter a Number');
+  const list = document.querySelector('.list');
+  const listHeader = document.querySelector('.list_header')
+
+  listHeader.textContent = `Kisses you owe me`;
+  list.children[0].textContent = `${number}0`;
+
+  while (list.children.length > 1) {
+    list.removeChild(list.lastChild);
+  }
+}
+
 myButton.addEventListener('click', () => {
-  setNumber();
+  setList();
 });
